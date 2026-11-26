@@ -28,19 +28,14 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 ## Implementation decisions
 
-Record your plan here before editing code.
 
-Complete Mongoose models and validation for User, Team, Activity, and Workout.
-Fix the seed script, preserving existing user data and demo-team membership reconciliation.
-Implement backend services, in this order:
-Activities
-Teams
-Leaderboard
-Workout suggestions
-Expose the corresponding Express routes under /api/*, with deliberate 4xx validation responses.
-Implement the React API integration using client.ts.
-Build frontend routes/states for loading, empty, success, and accessible errors.
-Re-run data, API, frontend, and build tests from the bottom of the tier dependency chain.
+Add Mongoose validation and schemas.
+Implement stable, idempotent seeding.
+Implement backend activity and team services/routes.
+Implement leaderboard and workout-suggestion logic/routes.
+Connect the frontend through the shared API client.
+Add loading, empty, success, and accessible error states.
+Re-run data tests, API tests, frontend tests, then builds.
 
 ## Test plan
 
